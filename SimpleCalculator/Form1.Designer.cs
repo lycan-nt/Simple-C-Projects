@@ -34,12 +34,13 @@
             this.TxbN2 = new System.Windows.Forms.TextBox();
             this.BtnSum = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnSub = new System.Windows.Forms.Button();
-            this.BtnMul = new System.Windows.Forms.Button();
             this.BtnDiv = new System.Windows.Forms.Button();
+            this.BtnMul = new System.Windows.Forms.Button();
+            this.BtnSub = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TxbR = new System.Windows.Forms.TextBox();
+            this.BtnClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,7 @@
             this.BtnSum.TabIndex = 4;
             this.BtnSum.Text = "+";
             this.BtnSum.UseVisualStyleBackColor = true;
+            this.BtnSum.Click += new System.EventHandler(this.BtnSum_Click);
             // 
             // panel1
             // 
@@ -99,15 +101,15 @@
             this.panel1.Size = new System.Drawing.Size(68, 221);
             this.panel1.TabIndex = 5;
             // 
-            // BtnSub
+            // BtnDiv
             // 
-            this.BtnSub.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSub.Location = new System.Drawing.Point(13, 66);
-            this.BtnSub.Name = "BtnSub";
-            this.BtnSub.Size = new System.Drawing.Size(43, 23);
-            this.BtnSub.TabIndex = 5;
-            this.BtnSub.Text = "-";
-            this.BtnSub.UseVisualStyleBackColor = true;
+            this.BtnDiv.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDiv.Location = new System.Drawing.Point(13, 184);
+            this.BtnDiv.Name = "BtnDiv";
+            this.BtnDiv.Size = new System.Drawing.Size(43, 23);
+            this.BtnDiv.TabIndex = 7;
+            this.BtnDiv.Text = "/";
+            this.BtnDiv.UseVisualStyleBackColor = true;
             // 
             // BtnMul
             // 
@@ -119,22 +121,22 @@
             this.BtnMul.Text = "*";
             this.BtnMul.UseVisualStyleBackColor = true;
             // 
-            // BtnDiv
+            // BtnSub
             // 
-            this.BtnDiv.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDiv.Location = new System.Drawing.Point(13, 184);
-            this.BtnDiv.Name = "BtnDiv";
-            this.BtnDiv.Size = new System.Drawing.Size(43, 23);
-            this.BtnDiv.TabIndex = 7;
-            this.BtnDiv.Text = "/";
-            this.BtnDiv.UseVisualStyleBackColor = true;
+            this.BtnSub.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSub.Location = new System.Drawing.Point(13, 66);
+            this.BtnSub.Name = "BtnSub";
+            this.BtnSub.Size = new System.Drawing.Size(43, 23);
+            this.BtnSub.TabIndex = 5;
+            this.BtnSub.Text = "-";
+            this.BtnSub.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(25, 140);
+            this.button1.Location = new System.Drawing.Point(12, 140);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 33);
+            this.button1.Size = new System.Drawing.Size(101, 33);
             this.button1.TabIndex = 6;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
@@ -156,11 +158,22 @@
             this.TxbR.Size = new System.Drawing.Size(100, 20);
             this.TxbR.TabIndex = 8;
             // 
+            // BtnClear
+            // 
+            this.BtnClear.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClear.Location = new System.Drawing.Point(132, 140);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(101, 33);
+            this.BtnClear.TabIndex = 9;
+            this.BtnClear.Text = "Clear";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            // 
             // FrmlCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 237);
+            this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.TxbR);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -191,6 +204,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxbR;
+        private System.Windows.Forms.Button BtnClear;
     }
 }
 

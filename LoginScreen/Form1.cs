@@ -16,5 +16,23 @@ namespace LoginScreen
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+            if ((TxbLogin.Text == "Master") && (TxbPassword.Text == "1") )
+            {
+
+                MessageBox.Show("Welcome to the system!");
+
+            }
+            else
+            {
+
+                MessageBox.Show("Invalid login or password.");
+
+            }
+
+        }
     }
 }

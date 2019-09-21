@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxbLogin = new System.Windows.Forms.TextBox();
+            this.TxbPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,19 +38,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // TxbLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(297, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.TxbLogin.Location = new System.Drawing.Point(297, 91);
+            this.TxbLogin.Name = "TxbLogin";
+            this.TxbLogin.Size = new System.Drawing.Size(100, 20);
+            this.TxbLogin.TabIndex = 0;
             // 
-            // textBox2
+            // TxbPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(297, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.TxbPassword.Location = new System.Drawing.Point(297, 144);
+            this.TxbPassword.Name = "TxbPassword";
+            this.TxbPassword.PasswordChar = '*';
+            this.TxbPassword.Size = new System.Drawing.Size(100, 20);
+            this.TxbPassword.TabIndex = 1;
             // 
             // label1
             // 
@@ -90,6 +91,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Connect";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox1
             // 
@@ -111,8 +113,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxbPassword);
+            this.Controls.Add(this.TxbLogin);
             this.Name = "FrmLogin";
             this.ShowIcon = false;
             this.Text = "Login Screen";
@@ -124,8 +126,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxbLogin;
+        private System.Windows.Forms.TextBox TxbPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

@@ -21,5 +21,52 @@ namespace TesteDeControles
         {
 
         }
+
+        private void BtnConfirm_Click(object sender, EventArgs e)
+        {
+            
+            string NameUser, City;
+            DateTime DateBirth;
+            bool Sex1, Sex2;
+            int RegNumber;
+
+            
+            //Assigning Form Values ​​to Variables
+            NameUser = TxbName.Text;
+            DateBirth = dateTimePicker1.Value;
+            Sex1 = radioButton1.Checked;
+            Sex2 = radioButton2.Checked;
+            City = CbCity.Text;
+            RegNumber = Convert.ToInt32(TxbRegNum.Text);
+
+            //Displays filled values ​​on screen
+            MessageBox.Show("Nome: " + NameUser);
+            MessageBox.Show("Data de nascimeno: " + DateBirth);
+            MessageBox.Show("Cidade: " + City);
+
+            //Check which radiobuton is marked and display the result on screen
+            if (Sex1 == true)
+                {
+
+
+                MessageBox.Show("O genero é: Masculino" );
+
+                }
+            else if (Sex2 == true)
+            {
+
+                MessageBox.Show("O genero é: Feiminino");
+
+            }
+            else
+            {
+
+                MessageBox.Show("Sex Required");
+
+            }
+
+            MessageBox.Show("O numero de registro é: " + Convert.ToString(RegNumber));
+
+        }
     }
 }

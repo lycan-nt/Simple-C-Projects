@@ -8,3 +8,4 @@ C:\Users\Felipe\Documents\Simple C # Projects\LoginScreen\obj\Debug\LoginScreen.
 C:\Users\Felipe\Documents\Simple C # Projects\LoginScreen\obj\Debug\LoginScreen.csproj.CoreCompileInputs.cache
 C:\Users\Felipe\Documents\Simple C # Projects\LoginScreen\obj\Debug\LoginScreen.exe
 C:\Users\Felipe\Documents\Simple C # Projects\LoginScreen\obj\Debug\LoginScreen.pdb
+C:\Users\Felipe\Documents\Simple C # Projects\LoginScreen\obj\Debug\LoginScreen.Form2.resources

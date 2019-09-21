@@ -37,7 +37,6 @@
             this.BtnDiv = new System.Windows.Forms.Button();
             this.BtnMul = new System.Windows.Forms.Button();
             this.BtnSub = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TxbR = new System.Windows.Forms.TextBox();
             this.BtnClear = new System.Windows.Forms.Button();
@@ -110,6 +109,7 @@
             this.BtnDiv.TabIndex = 7;
             this.BtnDiv.Text = "/";
             this.BtnDiv.UseVisualStyleBackColor = true;
+            this.BtnDiv.Click += new System.EventHandler(this.BtnDiv_Click);
             // 
             // BtnMul
             // 
@@ -120,6 +120,7 @@
             this.BtnMul.TabIndex = 6;
             this.BtnMul.Text = "*";
             this.BtnMul.UseVisualStyleBackColor = true;
+            this.BtnMul.Click += new System.EventHandler(this.BtnMul_Click);
             // 
             // BtnSub
             // 
@@ -130,22 +131,13 @@
             this.BtnSub.TabIndex = 5;
             this.BtnSub.Text = "-";
             this.BtnSub.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 33);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnSub.Click += new System.EventHandler(this.BtnSub_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 201);
+            this.label3.Location = new System.Drawing.Point(21, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 22);
             this.label3.TabIndex = 7;
@@ -153,20 +145,22 @@
             // 
             // TxbR
             // 
-            this.TxbR.Location = new System.Drawing.Point(132, 201);
+            this.TxbR.Location = new System.Drawing.Point(132, 150);
             this.TxbR.Name = "TxbR";
+            this.TxbR.ReadOnly = true;
             this.TxbR.Size = new System.Drawing.Size(100, 20);
             this.TxbR.TabIndex = 8;
             // 
             // BtnClear
             // 
             this.BtnClear.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClear.Location = new System.Drawing.Point(132, 140);
+            this.BtnClear.Location = new System.Drawing.Point(24, 190);
             this.BtnClear.Name = "BtnClear";
-            this.BtnClear.Size = new System.Drawing.Size(101, 33);
+            this.BtnClear.Size = new System.Drawing.Size(208, 33);
             this.BtnClear.TabIndex = 9;
             this.BtnClear.Text = "Clear";
             this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // FrmlCalculator
             // 
@@ -176,7 +170,6 @@
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.TxbR);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.TxbN2);
             this.Controls.Add(this.TxbN1);
@@ -201,7 +194,6 @@
         private System.Windows.Forms.Button BtnDiv;
         private System.Windows.Forms.Button BtnMul;
         private System.Windows.Forms.Button BtnSub;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxbR;
         private System.Windows.Forms.Button BtnClear;

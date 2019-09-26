@@ -67,6 +67,47 @@ namespace Cashier
         private void TxbCod_TextChanged(object sender, EventArgs e)
         {
 
+            if (TxbCod.Text.Length == 1)
+            {
+
+                int ind = 0;
+                for (int cp =1; cp < 6; cp++)
+                {
+
+                    if (TxbCod.Text == codProd[cp])
+                    {
+
+                        ind = cp;
+
+                    }
+
+                }
+
+                if (ind > 0)
+                {
+
+                    ListProd.Items.Add(string.Format("#{0} - {1} - {2:C}", codProd[ind], nameProd[ind], valueProd[ind]));
+
+                    PicPro.ImageLocation = @"C:\Users\Felipe\Documents\Simple C # Projects\Cashier\Image\" + codProd[ind] + ".jpg";
+
+                    totSum += valueProd[ind];
+                    TxbTot.Text = Convert.ToString("R$: " + totSum);
+
+                    TxbCod.Clear();
+                    TxbCod.Focus();
+
+
+                }
+                else
+                {
+
+                    MessageBox.Show("Produto Não encontrado");
+
+                }
+
+
+            }
+
         }
     }
 }

@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCachier));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PicPro = new System.Windows.Forms.PictureBox();
             this.LblProCod = new System.Windows.Forms.Label();
             this.TxbCod = new System.Windows.Forms.TextBox();
             this.LblTot = new System.Windows.Forms.Label();
             this.TxbTot = new System.Windows.Forms.TextBox();
             this.ListProd = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicPro)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -50,14 +50,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // PicPro
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 197);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.PicPro.Location = new System.Drawing.Point(12, 197);
+            this.PicPro.Name = "PicPro";
+            this.PicPro.Size = new System.Drawing.Size(200, 200);
+            this.PicPro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicPro.TabIndex = 1;
+            this.PicPro.TabStop = false;
             // 
             // LblProCod
             // 
@@ -114,14 +114,14 @@
             this.Controls.Add(this.LblTot);
             this.Controls.Add(this.TxbCod);
             this.Controls.Add(this.LblProCod);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.PicPro);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FrmCachier";
             this.Text = "Cashier";
             this.Load += new System.EventHandler(this.FrmCachier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicPro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,7 +130,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox PicPro;
         private System.Windows.Forms.Label LblProCod;
         private System.Windows.Forms.TextBox TxbCod;
         private System.Windows.Forms.Label LblTot;

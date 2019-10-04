@@ -31,13 +31,13 @@
             this.BtnRecord = new System.Windows.Forms.Button();
             this.TxbName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GridProduct = new System.Windows.Forms.DataGridView();
             this.TxbBarCod = new System.Windows.Forms.TextBox();
             this.TxbProvider = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnRecord
@@ -71,14 +71,14 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Name";
             // 
-            // dataGridView1
+            // GridProduct
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(350, 85);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(316, 231);
-            this.dataGridView1.TabIndex = 3;
+            this.GridProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridProduct.Location = new System.Drawing.Point(350, 85);
+            this.GridProduct.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.GridProduct.Name = "GridProduct";
+            this.GridProduct.Size = new System.Drawing.Size(465, 231);
+            this.GridProduct.TabIndex = 3;
             // 
             // TxbBarCod
             // 
@@ -125,21 +125,21 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(346, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 22);
+            this.label4.Size = new System.Drawing.Size(44, 22);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Lista";
+            this.label4.Text = "List";
             // 
             // FrmProductReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 432);
+            this.ClientSize = new System.Drawing.Size(830, 432);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxbProvider);
             this.Controls.Add(this.TxbBarCod);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.GridProduct);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxbName);
             this.Controls.Add(this.BtnRecord);
@@ -147,7 +147,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FrmProductReg";
             this.Text = "Product Registration";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,7 +158,7 @@
         private System.Windows.Forms.Button BtnRecord;
         private System.Windows.Forms.TextBox TxbName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView GridProduct;
         private System.Windows.Forms.TextBox TxbBarCod;
         private System.Windows.Forms.TextBox TxbProvider;
         private System.Windows.Forms.Label label2;

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration", "CustomerRegistration.csproj", "{F3465641-6799-4B71-9E0F-0E7E90AA89A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B441C108-3DF4-4219-8450-8BE08AF82D43}"
+	ProjectSection(SolutionItems) = preProject
+		Conect_SQL_Server.cs = Conect_SQL_Server.cs
+		SqlQuery_2.sql = SqlQuery_2.sql
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Install", "Install\Install.vdproj", "{E9336812-D14C-4003-8EE0-74595D588202}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Debug|x86.ActiveCfg = Debug|x86
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Debug|x86.Build.0 = Debug|x86
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Release|x86.ActiveCfg = Release|x86
+		{F3465641-6799-4B71-9E0F-0E7E90AA89A4}.Release|x86.Build.0 = Release|x86
+		{E9336812-D14C-4003-8EE0-74595D588202}.Debug|Any CPU.ActiveCfg = Debug
+		{E9336812-D14C-4003-8EE0-74595D588202}.Debug|x86.ActiveCfg = Debug
+		{E9336812-D14C-4003-8EE0-74595D588202}.Release|Any CPU.ActiveCfg = Release
+		{E9336812-D14C-4003-8EE0-74595D588202}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A0DF3E8-6712-4865-A905-4753855DD542}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal

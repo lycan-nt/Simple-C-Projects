@@ -50,6 +50,7 @@
             this.BtnRecord.TabIndex = 0;
             this.BtnRecord.Text = "Record";
             this.BtnRecord.UseVisualStyleBackColor = true;
+            this.BtnRecord.Click += new System.EventHandler(this.BtnRecord_Click);
             // 
             // TxbName
             // 
